@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventure</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('20180708_082635-01.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+	 backdrop-filter: blur(5px); 
+            color: white; 
+        }
+
+        header {
+            background: #A7C7E7;
+            color: #0F52BA;
+            padding: 20px;
+            text-align: center;
+        }
+header .navbar a{
+	font-size: 2rem;
+	padding: 0 1.5rem;
+	color: #0437F2;
+font-size: 20px;
+}
+header .navbar a:hover{
+	color: #0818A8;
+}
+
+        section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        section h2 {
+            color: white;
+        }
+
+        .destination-card {
+            background: #fff;
+	 color: blue; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background: #00008B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Travel Adventure</h1>
+        <p>Your Gateway to Exciting Destinations</p>
+	<nav class="navbar">
+		<a href="#home">Home</a>
+		<a href="#About">About</a>
+		<a href="#Review">Review</a>
+		<a href="#Contact">Contact</a>
+</nav>
+    </header>
+<section class="home" id="home">
+	<div class="content">
+		<h1 class="heading">Blissful<br>Journeys</h1>
+		<span>ExploreWorld: Towards Amazing Nature</span>
+		<p>Welcome to a world where wanderlust meets wonder! At Blissful Journeys we believe that every journey is a story waiting to be written, and we're here to help you create unforgettable chapters. Embark on a seamless blend of adventure and luxury as we unveil the treasures of our carefully curated destinations.
+
+Imagine strolling along pristine beaches with the golden sun kissing your skin or exploring ancient alleyways steeped in history and culture. Our passion for travel is reflected in the meticulous selection of destinations that promise not just a vacation, but an immersive experience. Whether you crave the tranquility of nature retreats, the excitement of bustling cities, or the charm of cultural gems, we have your dream destination waiting.</p>
+		 <img src="image.jpg" alt="image" style="width: 600px; height: 600;">
+	</div>
+</section>
+<section class="About" id="About">
+	<h1 class="heading">About Us</h1>
+	<div class="content">
+	<p>Welcome to Blissful Journeys</p>
+<p>Discover Your Next Adventure with Us!</p>
+Welcome to our travel haven!
+<p>Blissful Journeys we believe that every journey is an opportunity for discovery and connection. Established with a passion for wanderlust, our team is dedicated to curating unforgettable travel experiences that go beyond the ordinary.
+
+Our story begins with a shared love for exploring the world's diverse cultures, landscapes, and hidden gems. We understand that travel is not just about reaching a destination; it's about the moments, the people, and the stories that unfold along the way.
+At the heart of Blissful Journeys is a commitment to providing you with seamless and personalized travel solutions. Whether you're a seasoned globetrotter or a first-time adventurer, we are here to inspire, assist, and make your travel dreams a reality.
+We take pride in our handpicked selection of destinations, accommodations, and activities, ensuring that each experience reflects the unique essence of the places you visit. Our team of travel enthusiasts is dedicated to crafting itineraries that cater to your interests, creating memories that last a lifetime.
+Transparency, trust, and a relentless pursuit of excellence define our ethos. We value the relationships we build with our travelers, and your satisfaction is our top priority. Our goal is to be your trusted companion in every step of your journey, from the moment you dream of a destination to the instant you return home with a heart full of memories.
+Thank you for choosing Blissful Journeys as your gateway to the world. Embark on a journey with us, and let's explore the wonders of the world together.</p>
+Happy travels!
+
+Blissful Journeys Team
+
+	<a href="learn.html" class="btn">Learn More</a>
+</div>
+</div>
+</section>
+
+    <section>
+        <h2>Popular Destinations</h2>
+
+<div class="destination-card">
+            <img src="gopuram.jpg" alt="Destination 3" style="width: 600px; height: 600;">
+            <h3>Devotional places</h3>
+            <p>Finding solace in the sacred vibes of this Hindu temple.</p>
+<p>Exploring the rich heritage of Hinduism in this majestic temple.</p>
+        </div>
+
+        <div class="destination-card">
+            <img src="destination 1.jpg" alt="Destination 1" style="width: 600px; height: 600;">
+            <h3>Beach Paradise</h3>
+            <p>Escape to the pristine beaches with crystal clear waters.</p>
+        </div>
+
+        <div class="destination-card">
+            <img src="destination 2 (2).jpg" alt="Destination 2"style="width: 600px; height: 600;">
+            <h3>Mountain Retreat</h3>
+            <p>Experience the serenity of the mountains and breathtaking views.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Plan Your Journey</h2>
+        <p>Discover new places, create unforgettable memories, and embark on your next adventure with Travel Adventure.</p>
+        <a href="contact.html">Contact Us to Get Started</a>
+</div>
+    </section>
+
+    <footer>
+        &copy; 2024 Travel Adventure. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+
+LEARN.HTML
+
+<html>
+<head>
+<title>Learn More</title>
+<style>
+body {
+  background-image: url('kedar.jpg');
+  background-repeat: no-repeat;
+background-attachment: fixed;  
+  background-size: cover;
+background-repeat: no-repeat;
+	 backdrop-filter: blur(5px); 
+            color: #0000FF; 
+        }
+}
+</style>
+</style>  
+</head>
+<h1>Welcome To Our Travel and Tourism</h1>
+<p>Dear Travel Enthusiast,
+We are thrilled to welcome you to the online home of Blissful Journeys, where your journey begins! As a premier travel and tourism company, we take pride in curating exceptional experiences that transcend ordinary vacations.
+Our webpage is designed to be your virtual passport to a world of exploration, adventure, and relaxation.
+Discover the Essence of  Blilssful Journeys</p>
+<p><ul> <li>Immersive Destinations: Explore a diverse array of destinations carefully selected to cater to every traveler's unique preferences. From sun-kissed beaches and vibrant cities to serene mountains and cultural hotspots, our portfolio promises a kaleidoscope of experiences. </li>
+
+ <li>Tailored Packages: We understand that each traveler is different. Our expertly crafted packages cater to solo adventurers, couples seeking a romantic getaway, families creating lasting memories, and even corporate groups in search of team-building retreats. Your dream vacation is just a click away. </li>
+
+ <li>Seamless Booking: Our user-friendly interface ensures a hassle-free booking experience. Navigate through our website effortlessly, compare packages, and secure your reservation with just a few clicks. Our secure payment gateway guarantees a safe and reliable transaction process. </li>
+
+ <li>Inspiring Content: Dive into our blog section, where we share travel tips, destination highlights, and inspiring stories from fellow globetrotters. Let our content ignite your wanderlust and provide valuable insights to enhance your travel experience. </li>
+
+ <li>Customer Testimonials: Hear what our satisfied customers have to say about their unforgettable journeys with [Blissful Journeys]. Real stories, real experiences – because your satisfaction is our ultimate goal. </li>
+
+ <li>24/7 Support: Our dedicated customer support team is available around the clock to address any queries or concerns. From pre-trip planning to post-trip feedback, we are committed to ensuring your journey is as smooth as possible. </li>
+</ul></p>  
+
+Join the Blissful Journey Community:
+Connect with fellow travelers on our social media platforms and be part of a vibrant community that shares a passion for exploration. Stay updated on travel trends, exclusive offers, and upcoming events that will elevate your travel experience.
+
+Embark on a Journey of a Lifetime:
+At [Blissful Journey], we believe that travel is not just about reaching a destination; it's about the experiences that shape us along the way. Whether you seek relaxation, adventure, or cultural immersion, we invite you to embark on a journey of a lifetime with us.
+
+
+Thank you for choosing Blissful Journeys. Let's make your travel dreams a reality!
+
+Bon Voyage,
+The Blissful Journeys Team
+</p>
+<h2>This Is Our Webpage For Choosing a Perfect trip to your destination</h2>
+<p> Down Below is our address, email number, timings, Ph no</p>
+
+<p><ul>
+  <li>Phone Number: +91 123-456-7890</li>
+  <li>Email ID: urdestinations@gmail.com</li>
+  <li>Address: Pune, Maharashtra:411016 India</li>
+<li>Timing: 8:30am to 8: 30pm</li>
+</ul></p>  
+</style>
+</body>
+</html> 
