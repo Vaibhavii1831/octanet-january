@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+    background-image: url('sn.jpg');
+    background-size: cover;
+ background-position: center;
+    background-repeat: no-repeat;
+
+	}
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+         text-align: center;
+        }
+h3 {
+            text-align: center;
+}
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li.completed {
+            background-color: white;
+            text-decoration: line-through;
+        }
+
+        li button {
+            background-color: #ff5555;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .add-btn {
+            width: 28%;
+            background-color: #55aaff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .completed-list {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+  <h1>Agenda</h1>
+ 
+ <div class="container">
+<header>
+     <h3>To-Do List</h3>
+        <input type="text" id="task" placeholder="Add a new task">
+        <button class="add-btn" onclick="addTask()">Add</button>
+        <ul id="task-list">
+            <!-- Tasks will be added here -->
+        </ul>
+        <div class="completed-list">
+            <h2>Completed Tasks</h2>
+            <ul id="completed-task-list">
+                <!-- Completed tasks will be added here -->
+            </ul>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+        <button id="showPendingBtn">Show Pending Tasks</button>
+    </div>
+    <script src="script.js"></script>
+    
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById("task");
+            const taskText = taskInput.value.trim();
+
+            if (taskText === "") {
+                return;
+            }
+
+            const taskList = document.getElementById("task-list");
+            const li = document.createElement("li");
+
+            li.innerHTML = `
+                <span>${taskText}</span>
+                <button onclick="editTask(this)">Edit</button>
+                <button onclick="completeTask(this)">Complete</button>
+                <button onclick="deleteTask(this)">Delete</button>
+	<button onclick="pendingTask(this)">Pending</button>
+            `;
+
+            taskList.appendChild(li);
+
+            taskInput.value = "";
+        }
+
+        function editTask(button) {
+            const li = button.parentElement;
+            const taskText = li.querySelector("span").textContent;
+            const editedText = prompt("Edit task:", taskText);
+
+            if (editedText !== null) {
+                li.querySelector("span").textContent = editedText;
+            }
+        }
+
+        function completeTask(button) {
+            const li = button.parentElement;
+            li.classList.toggle("completed");
+
+            // Move completed task to the Completed Tasks list
+            if (li.classList.contains("completed")) {
+                const completedTaskList = document.getElementById("completed-task-list");
+                completedTaskList.appendChild(li);
+                button.textContent = "Undo";
+            } else {
+                const taskList = document.getElementById("task-list");
+                taskList.appendChild(li);
+                button.textContent = "Complete";
+            }
+        }
+
+        function deleteTask(button) {
+            const li = button.parentElement;
+            li.remove();
+        }
+
+    </script>
+</body>
+</html>
+
+css
+
+document.addEventListener("DOMContentLoaded", function () {
+    const taskInput = document.getElementById("taskInput");
+    const addTaskBtn = document.getElementById("addTaskBtn");
+    const taskList = document.getElementById("taskList");
+    const showPendingBtn = document.getElementById("showPendingBtn");
+
+    addTaskBtn.addEventListener("click", function () {
+        const taskText = taskInput.value.trim();
+        if (taskText !== "") {
+            addTask(taskText);
+            taskInput.value = "";
+        }
+    });
+
+    function addTask(taskText) {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <span>${taskText}</span>
+            <button class="completeBtn">Complete</button>
+            <button onclick="deleteTask(this)">Delete</button>
+        `;
+        taskList.appendChild(li);
+
+        li.querySelector(".completeBtn").addEventListener("click", function () {
+            li.classList.toggle("completed");
+        });
+    }
+
+    showPendingBtn.addEventListener("click", function () {
+        const completedTasks = document.querySelectorAll(".completed");
+        completedTasks.forEach(task => {
+            task.style.display = "none";
+        });
+    });
+});
